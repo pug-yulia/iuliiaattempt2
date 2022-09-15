@@ -1,0 +1,36 @@
+
+
+.nav { grid-area: preheader; }
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'preheader preheader preheader preheader preheader preheader'
+    'header header header header header header'
+    'menu main main main right right'
+    'footer footer footer footer footer footer';
+  gap: 5px;
+  background-color: #b5e0a8;
+  padding: 10px;
+  
+
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: left;
+  padding: 5px 0;
+  font-size: 25px;
+  font-weight: bold;
+ 
+  color: rgba(0, 0, 0, 0.8);
+  
+}
+h1 {
+    text-align: center;
+}
